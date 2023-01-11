@@ -1,5 +1,11 @@
 import { Header } from "../elements/header";
+import ProductCard from "../elements/prod-card";
 
 export default function Home() {
-  return <Header />;
+  return (
+    <div>
+      <Header />
+      <ProductCard />
+    </div>
+  );
 }

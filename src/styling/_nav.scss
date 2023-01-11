@@ -1,22 +1,37 @@
 @import "../styling/_base.scss";
 
 nav {
-    @include FlexCenter(row, flex-start, baseline);
+    @include FlexCenter(row, space-between, baseline);
     margin: 0px 291.6px;
     padding: 0px 12px;
 
-    i {
+    .left-side {
+        @include FlexCenter(row, flex-start, baseline);
+
+        i {
         color: white;
         padding: 6px 12px;
 
-        &:hover {
+            &:hover {
             cursor: pointer;
             background-color: #354f52;
             border-radius: $sml-rounded;
         }
     }
     
-    h2 {
-            margin: $no-margins;
+        h2 {
+            margin: 0px $sml2-padding;
+            color: white;
         }
+    }
+
+    .right-side {
+        @include FlexCenter(row, space-evenly, baseline);
+        color: white;
+
+        a {
+            padding: $sml-padding;
+        }
+    }
 }
+

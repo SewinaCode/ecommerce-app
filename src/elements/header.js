@@ -11,9 +11,9 @@ function Header() {
 
 function Footer() {
   return (
-    <header>
+    <div>
       <h2>Hello World</h2>
-    </header>
+    </div>
   );
 }
 
