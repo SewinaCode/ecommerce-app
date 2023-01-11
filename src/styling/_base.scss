@@ -1,0 +1,20 @@
+//Colour 
+$dark-green: #2f3e46;
+
+//Margins
+$base-margins: 0px 291.6px;
+$no-margins: 0px;
+
+//Paddings
+$sml-padding: 8px;
+
+//Border-width
+$sml-rounded: 5px;
+
+//Flex mixins
+@mixin FlexCenter($direction, $sec-align, $item-align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $sec-align;
+    align-items: $item-align;
+}
