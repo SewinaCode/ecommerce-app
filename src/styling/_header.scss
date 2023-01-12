@@ -5,4 +5,12 @@
         padding: 8px 0px;
     }
 
+    .footer {
+        @include FlexCenter(row, center, center);
+        color: white;
+        font-size: 12px;
+        background-color: $dark-green;
+        padding: 8px 0px;
+    }
+
 

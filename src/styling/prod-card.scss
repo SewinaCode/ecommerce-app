@@ -1,7 +1,25 @@
 @import "../styling/_base.scss";
 
-.card {
-    border-radius: $sml-rounded;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.feat-prod {
+    padding: 1rem;
+
+    .card-sec {
+    @include FlexCenter(row, center, none);
+    // margin: 21.44px 0px;
+    flex-wrap: wrap;
+    }
     
+    .card {
+    border-radius: $sml-rounded;
+    border: 1px $light-grey solid;
+    margin: 1rem;
+        img {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .prod-info {
+            padding: 1rem;
+        }
+    }
 }

@@ -1,4 +1,4 @@
-import { Header } from "../elements/header";
+import { Header, Footer } from "../elements/header";
 import ProductCard from "../elements/prod-card";
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
     <div>
       <Header />
       <ProductCard />
+      <Footer />
     </div>
   );
 }

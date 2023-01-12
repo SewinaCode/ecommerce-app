@@ -8,8 +8,8 @@ export default function Nav() {
         <h2>amazona</h2>
       </div>
       <div className="right-side">
-        <a>Cart</a>
-        <a>Sign in</a>
+        <a href="#">Cart</a>
+        <a href="#">Sign in</a>
       </div>
     </nav>
   );
