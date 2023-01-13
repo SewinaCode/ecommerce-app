@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styling/_nav.scss";
 
 export default function Nav() {
@@ -5,7 +6,9 @@ export default function Nav() {
     <nav>
       <div className="left-side">
         <i className="fa fa-bars" />
-        <h2>amazona</h2>
+        <Link to="/">
+          <h2>amazona</h2>
+        </Link>
       </div>
       <div className="right-side">
         <a href="#">Cart</a>

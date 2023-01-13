@@ -5,7 +5,7 @@
 
     .card-sec {
     @include FlexCenter(row, center, none);
-    // margin: 21.44px 0px;
+    margin: 1rem;
     flex-wrap: wrap;
     }
     

@@ -1,25 +1,29 @@
+import { Link } from "react-router-dom";
 import "../styling/prod-card.scss";
 import data from "../data";
 
 export default function ProductCard() {
   return (
-    <div className="feat-prod">
+    <div>
       <h1>Featured Products</h1>
       <div className="card-sec">
         {data.products.map((product) => (
           <div className="card" key={product.slug}>
-            <a href={`/product/${product.slug}`}>
+            <Link to={`/product/${product.slug}`}>
               <img src={product.image} alt={product.name} />
-            </a>
+            </Link>
             <div className="prod-info">
-              <a href={`/product/${product.slug}`}>
+              <Link to={`/product/${product.slug}`}>
                 <h2>{product.name}</h2>
-              </a>
+              </Link>
               <p>{product.rating}</p>
               <p>
                 <strong>${product.price}</strong>
               </p>
               <p>{product.countInStock} left in stock</p>
+              <button>
+                <strong>Add to Cart</strong>
+              </button>
             </div>
           </div>
         ))}
