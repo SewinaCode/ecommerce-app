@@ -1,6 +1,7 @@
+import React from "react";
 import Home from "./sections/header-footer";
 
-function App() {
+export default function App() {
   return (
     <>
       <Home />
@@ -8,4 +9,3 @@ function App() {
   );
 }
 
-export default App;

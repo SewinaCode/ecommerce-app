@@ -1,3 +1,4 @@
+import React from "react";
 import "../styling/_header.scss";
 import Nav from "./nav";
 

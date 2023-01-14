@@ -1,5 +1,6 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Header, Footer } from "../elements/header";
+import { Header } from "../elements/header";
 import ProductCard from "../elements/prod-card";
 import Product from "../screens/ProductScreen";
 import "../styling/prod-card.scss";

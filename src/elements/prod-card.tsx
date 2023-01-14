@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../styling/prod-card.scss";
 import data from "../data";
+import React from "react";
 
 export default function ProductCard() {
   return (
