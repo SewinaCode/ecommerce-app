@@ -13,15 +13,16 @@ nav {
         padding: 6px 12px;
 
             &:hover {
-            cursor: pointer;
             background-color: #354f52;
             border-radius: $sml-rounded;
+            cursor: pointer;
         }
-    }
+     }
     
         h2 {
-            margin: 0px $sml2-padding;
             color: white;
+            margin: 0px $sml2-padding;
+            text-decoration: none;
         }
     }
 
@@ -31,8 +32,8 @@ nav {
 
         a {
             color: white;
-            padding: $sml-padding;
             font-weight: bold;
+            padding: $sml-padding;
             text-decoration: none;
         }
     }

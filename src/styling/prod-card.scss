@@ -1,25 +1,31 @@
 @import "../styling/_base.scss";
 
 .feat-prod {
-    padding: 1rem;
+  @include FlexCenter(column, center, center);
+  margin: 1rem;
+  padding: 1rem;
 
-    .card-sec {
-    @include FlexCenter(row, center, none);
-    margin: 1rem;
+  .card-sec {
+    @include FlexCenter(row, none, none);
     flex-wrap: wrap;
-    }
-    
-    .card {
+  }
+
+  .card {
     border-radius: $sml-rounded;
     border: 1px $light-grey solid;
     margin: 1rem;
-        img {
-            width: 100%;
-            max-width: 400px;
-        }
-
-        .prod-info {
-            padding: 1rem;
-        }
+    img {
+      width: 100%;
+      max-width: 400px;
     }
+
+    .prod-info {
+      padding: 1rem;
+
+      Button {
+        background-color: $mustard-yellow;
+        border-color: $light-grey;
+      }
+    }
+  }
 }

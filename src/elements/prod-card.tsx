@@ -6,7 +6,7 @@ import React, { useEffect, useReducer } from "react";
 import Rating from "./ratings";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -64,17 +64,17 @@ export default function ProductCard() {
               <Card.Body>
                 <div className="prod-info">
                   <Link to={`/product/${product["slug"]}`}>
-                    <Card.Title>{product["name"]}</Card.Title>
+                    <Card.Title><h3>{product["name"]}</h3></Card.Title>
                   </Link>
                   <Rating
                     rating={product.rating}
                     numReviews={product.numReviews}
                   />
                   <Card.Text>
-                    ${product["price"]}
+                    <h4>${product["price"]}</h4>
                   </Card.Text>
-                  <Button  variant="primary">
-                    Add to Cart
+                  <Button variant="primary">
+                    <h4>Add to Cart</h4>
                   </Button>
                 </div>
               </Card.Body>

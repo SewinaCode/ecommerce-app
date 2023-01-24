@@ -1,0 +1,10 @@
+@import "../styling/_base.scss";
+
+.ratings {
+    @include FlexCenter(row, flex-start, none);
+    color: $mustard-yellow;
+
+    h5 {
+        padding: 0 0.5rem;
+    }
+}

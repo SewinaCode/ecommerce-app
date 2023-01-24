@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <nav>
       <div className="left-side">
-        <i className="fa fa-bars" />
+        <i className="fa fa-bars"/>
         <Link to="/">
           <h2>amazona</h2>
         </Link>

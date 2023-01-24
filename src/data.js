@@ -45,7 +45,7 @@ const data = {
       countInStock: 10,
       brand: "Adidas",
       rating: 4.7,
-      numReviews: 10,
+      numReviews: 20,
       description: "Pants fit for every occasion",
     },
   ],
